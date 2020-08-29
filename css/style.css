@@ -1,0 +1,166 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1C1C1B;
+}
+a {
+    border: 0;
+    text-decoration: none !important;
+}
+
+.home {
+    text-align: center;
+}
+
+.house {
+    text-align: center;
+    margin-top: 20px;
+}
+.logo {
+    position: relative;
+    margin-top: 30px;
+}
+
+.bar {
+    padding: 10px 0;
+}
+
+.menu-list {
+    padding: 15px 0 10px 0;
+    width: 68%;
+    margin: auto;
+}
+
+.item-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #F3C446!important;
+    transition: .2s;
+}
+
+    .item-wrapper .image-wrapper {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+        .item-wrapper .image-wrapper img {
+            border-radius: 20px;
+            width: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        .item-wrapper .image-wrapper .title {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: bold;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .item-wrapper .image-wrapper .shadow {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+            z-index: 1;
+            height: 40%;
+        }
+
+    .item-wrapper .detail {
+        display: none;
+        padding: 30px 15px 10px 15px;
+        border: 1px solid #F3C446;
+        border-top: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .item-wrapper .detail .return-menu{
+       position:absolute;
+       left:15px;
+       top:10px;
+       cursor:pointer;
+    }
+
+    .item-wrapper.opened {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        background: #000;
+        z-index: 100;
+        border: 0;
+        height: 100%;
+        transition: .2s;
+        border: 1px solid #F3C446;
+    }
+
+    .item-wrapper.opened {
+        border: 0;
+        border-radius: 0;
+    }
+
+        .item-wrapper.opened .image-wrapper {
+            top: 20px;
+            border: 1px solid #F3C446;
+            margin-top:10px;
+        }
+
+
+        .item-wrapper.opened .detail {
+            display: block;
+        }
+
+            .item-wrapper.opened .detail .item {
+                position: relative;
+                font-size: .9rem;
+                color: #fff;
+            }
+
+                .item-wrapper.opened .detail .item .title {
+                    position: relative;
+                    font-size: .9rem;
+                    color: #fff;
+                }
+
+                .item-wrapper.opened .detail .item .name {
+                    border-right: 1px solid #fff;
+                }
+
+                    .item-wrapper.opened .detail .item .name span {
+                        padding-bottom: 10px;
+                        display: block;
+                    }
+
+                .item-wrapper.opened .detail .item .price {
+                    text-align: right;
+                }
+.reklam{
+    visibility:visible;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:2;
+    width:100%;
+    height:100%;
+}
+
+.vodafone-reklam{
+    height: 100%;
+    width: 100%;
+}
